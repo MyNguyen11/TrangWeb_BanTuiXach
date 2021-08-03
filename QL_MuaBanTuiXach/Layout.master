@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Layout.master.cs" Inherits="Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="dinhdang.css" rel="stylesheet" />
+    <style type="text/css">
+       
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main">
+        <div class="header1">
+            <div class="hotline">
+                <img alt="" class="auto-style1" src="Hinh/logodt.JPG" />&nbsp;
+                Hotline:0905993997
+            </div>
+            <div class="diachi">
+                &nbsp;
+                <img alt="" class="auto-style2" src="Hinh/dinhvi.JPG" />
+                Địa chỉ:140 Lê Trọng Tấn,Tây Thạnh,Tân Phú
+            </div>
+
+            <div class="dnanddk">
+                &nbsp;
+                <img alt="" class="auto-style3" src="Hinh/pepo.JPG" /> <a href="DangNhap.aspx">Đăng Nhập</a> or&nbsp; <a href="Dangky.aspx">Đăng ký</a>
+            </div>
+
+            </div>
+
+        <div class="header2">
+
+            <div class="hd21" style="color: #FF0000; font-weight: bold; font-size: 23px; font-family: 'Matura MT Script Capitals'">
+
+                <img class="auto-style4" src="Hinh/logoshop.jpg" /><br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MT Fashion</div>
+
+            <div class="hd2">
+                <div style="font-weight: bold">
+                    <p >
+                        &nbsp;
+                        Miễn phí vận chuyển</p>
+                </div>
+                <div>
+                    <p >
+                        Bán kính 100 km</p>
+                </div>
+                <img src="Hinh/xe.JPG" />
+            </div>
+
+            <div class="hd2">
+                <div style="font-weight: bold">
+                    <p >
+                        Hỗ Trợ 24/7</p>
+                </div>
+                <div>
+                    <p >
+                        Hotline:1900099</p>
+                </div>
+                <img src="Hinh/thu.JPG" />
+            </div>
+
+            <div class="hd2">
+                 <div style="font-weight: bold">
+                    <p >
+                        Giờ làm việc</p>
+                </div>
+                <div>
+                    <p >
+                        T2-T7 giờ hành chính</p>
+                </div>
+                <img src="Hinh/dongho.JPG" />
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <ul class="cap0">
+                <li><a href="TrangChu.aspx">Trang Chủ</a></li>
+                <li><a href="SanPham.aspx">Sản Phẩm &gt;</a>
+                    <ul class="cap1">
+                        <li><a href="ViNu.aspx">Túi Xách Nữ</a></li>
+                        <li><a href="ViNam.aspx">Túi Xách Nam</a></li>
+                        <li><a href="TuiXachGucci.aspx">Túi Xách Gucci</a></li>
+                        <li><a href="TuiXachGiaDa.aspx">Túi Xách Da Giả</a></li>
+                    </ul>
+                </li>
+                <li><a href="GioiThieu.aspx">Giới Thiệu</a></li>
+                <li><a href="TinTuc.aspx">Tin Tức &gt;</a>
+                    <ul class="cap1_2">
+                        <li><a href="GiamGia.aspx">Giảm Giá</a> </li>
+                        <li><a href="ThongBao.aspx">Thông Báo</a></li>
+                        <li><a href="TaiTro.aspx">Tài Trợ</a></li>
+                        <li><a href="TrangChu.aspx">Tips</a></li>
+                    </ul>
+                </li>
+                <li><a href="LienHe.aspx">Liên Hệ</a></li>
+                <li><a href="ChiDuong.aspx">Chỉ Đường</a></li>
+                <li><a href="Admin.aspx">Admin</a></li>
+            </ul>
+           
+        </div>
+
+         <div class=" content1">
+                    <div class="left">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Height="379px" Width="296px">
+                            <AlternatingRowStyle BackColor="#CCCCCC" />
+                            <Columns>
+                                <asp:HyperLinkField DataTextField="TenNSX" HeaderText="Các Nhà Sản Xuất Nổi Tiếng" DataNavigateUrlFields="LK">
+                                <HeaderStyle Font-Bold="True" Font-Italic="True" Font-Size="22px" ForeColor="#FF0066" BackColor="Yellow" />
+                                <ItemStyle BackColor="Black" BorderColor="Lime" BorderStyle="Solid" Font-Bold="True" Font-Size="20px" ForeColor="Yellow" HorizontalAlign="Center" Wrap="True" Font-Strikeout="False" Font-Underline="False" />
+                                </asp:HyperLinkField>
+                            </Columns>
+                            <FooterStyle BackColor="#CCCCCC" />
+                            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                            <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                            <SortedAscendingHeaderStyle BackColor="Gray" />
+                            <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                            <SortedDescendingHeaderStyle BackColor="#383838" />
+                        </asp:GridView>
+                    </div>
+
+                    <div class="right">
+
+                        <img alt="" src="Hinh/bgchinh.jpg" style="width: 811px; height: 388px" /></div>
+                </div>
+
+        <div class="than">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+                <div class="congty">
+                    <p class="tieude"><img src="Hinh/list.JPG" />CÔNG TY</p>
+                    <ul class="dd">
+                        <li><a class="td1" href="#">Giới thiệu</a></li>
+                        <li><a class="td1" href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+
+                <div class="chinhsach">
+                      <p class="tieude">
+                          <img src="Hinh/list.JPG" />CHÍNH SÁCH</p>
+                     <ul class="dd">
+                        <li><a class="td1" href="#"> Chính sách bảo mật</a></li>
+                        <li><a class="td1" href="#">Ưu đãi khách hàng thân thiết</a></li>
+                        <li><a class="td1" href="#">Chính sách bảo hành trọn đời</a></li>
+                        <li><a class="td1" href="#">Chính sách giao nhận</a></li>
+                        <li><a class="td1" href="#">Chính sách đổi sản phẩm</a></li>
+                    </ul>
+                </div>
+
+                <div class="hotro">
+                      <p class="tieude"><img src="Hinh/list.JPG" />HỖ TRỢ KHÁCH HÀNG</p>
+                    <ul class="dd">
+                     <li><a class="td1" href="#">Hướng dẫn mua hàng</a></li>
+                     <li><a class="td1" href="#">Tra cứu bảo hành</a></li>
+                     <li><a class="td1" href="#">Quy định về phiếu quà tặng</a></li>
+                     <li><a class="td1" href="#">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+
+                <div class="ketnoiad">
+                      <p class="tieude">KẾT NỐI VASCARA</p>
+                   
+                    <div class="hinh">
+                        <img src="Hinh/logointa.JPG" />
+                        <img src="Hinh/logoyto.JPG" />
+                        <img src="Hinh/logozl.JPG" />
+                        <img src="Hinh/logofb.JPG" />
+                    </div>
+
+                      <p class="tieude">PHƯƠNG THỨC THANH TOÁN</p>
+
+                     <div class="hinh">
+                         <img src="Hinh/atm.JPG" />
+                         <img src="Hinh/momo.JPG" />
+                         <img src="Hinh/zlpay.JPG" />
+                         <img src="Hinh/visa.JPG" />
+                    </div>
+                </div>
+
+
+        </div>
+
+        <div class="footer1"> 
+            <div class="ft1">
+                <br />
+                @Công ty TNHH MT Fashion. Văn phòng:102 Nguyễn Quý Anh,Tân Sơn Nhì,Tân Phú,TP Hồ Chí Minh
+                <p>GP số 0314657558 do sở KHĐT Tp Hồ Chí Minh cấp lần đầu ngày 05/08/2020</p></div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
